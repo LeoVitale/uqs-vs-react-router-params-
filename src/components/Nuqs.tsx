@@ -1,6 +1,8 @@
+import Layout from "@/layout"
+
 const Nuqs = () => {
   return (
-    <div>Nuqs</div>
+    <Layout>Nuqs</Layout>
   )
 }
 
