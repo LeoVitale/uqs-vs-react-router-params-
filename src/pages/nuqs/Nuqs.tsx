@@ -1,11 +1,11 @@
-import InputNuqsParams from "@/components/input-nuqs-params"
-import CheckboxListNuqs from "@/components/checkbox-list-nuqs"
-import InboxObserver from "@/components/inbox-observer"
-import FolderObserver from "@/components/folder-observer"
-import InboxFolderDisplay from "@/components/inbox-folder-display"
+import InputNuqsParams from "@/components/features/nuqs/input-nuqs-params"
+import CheckboxListNuqs from "@/components/features/nuqs/checkbox-list-nuqs"
+import InboxObserver from "@/components/features/nuqs/inbox-observer"
+import FolderObserver from "@/components/features/nuqs/folder-observer"
+import InboxFolderDisplay from "@/components/features/nuqs/inbox-folder-display"
 import HelpdeskBreadcrumb from "@/components/helpdesk-breadcrumb"
-import IndependentLabelsShowcase from "@/components/independent-labels-showcase"
-import ScatteredLabelsDemo from "@/components/scattered-labels-demo"
+import IndependentLabelsShowcase from "@/components/features/nuqs/independent-labels-showcase"
+import ScatteredLabelsDemo from "@/components/features/nuqs/scattered-labels-demo"
 import Layout from "@/layout"
 
 const Nuqs = () => {

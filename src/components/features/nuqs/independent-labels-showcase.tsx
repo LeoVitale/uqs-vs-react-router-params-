@@ -6,14 +6,13 @@ import EmailLabel from './labels/email-label'
 
 const IndependentLabelsShowcase = () => {
   // ✅ Este componente controla os valores, mas os labels observam independentemente
-  const [params, setParams] = useQueryStates({
+  const [, setParams] = useQueryStates({
     inbox: parseAsInteger,
     folder: parseAsInteger,
     ticket: parseAsInteger,
     email: parseAsInteger
   })
 
-  console.log(params)
 
   // Funções para testar a independência
   const setRandomInbox = () => setParams({ inbox: Math.floor(Math.random() * 100) + 1 })

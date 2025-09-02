@@ -1,5 +1,5 @@
 import { useQueryState, parseAsArrayOf, parseAsString } from 'nuqs'
-import { RenderFlash } from "./RenderFlash"
+import { RenderFlash } from "../../RenderFlash"
 
 interface CheckboxOption {
   id: string

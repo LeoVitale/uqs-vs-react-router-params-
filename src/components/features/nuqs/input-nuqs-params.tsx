@@ -1,5 +1,5 @@
-import { RenderFlash } from "./RenderFlash"
-import { Input } from "./ui/input"
+import { RenderFlash } from "../../RenderFlash"
+import { Input } from "../../ui/input"
 import { useQueryState } from 'nuqs'
 
 const InputNuqsParams = ({state}: {state: string}) => {

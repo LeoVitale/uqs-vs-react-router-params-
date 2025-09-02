@@ -1,5 +1,5 @@
-import InputUrlParams from "@/components/input-url-params"
-import CheckboxListUrlParams from "@/components/checkbox-list-url-params"
+import InputUrlParams from "@/components/features/url-params/input-url-params"
+import CheckboxListUrlParams from "@/components/features/url-params/checkbox-list-url-params"
 import Layout from "@/layout"
 
 const UrlParams = () => {

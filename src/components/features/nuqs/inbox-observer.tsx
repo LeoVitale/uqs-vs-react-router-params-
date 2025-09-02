@@ -1,5 +1,5 @@
 import { useQueryState, parseAsInteger } from 'nuqs'
-import { RenderFlash } from './RenderFlash'
+import { RenderFlash } from '../../RenderFlash'
 
 const InboxObserver = () => {
   // ✅ Observa APENAS o parâmetro "inbox"

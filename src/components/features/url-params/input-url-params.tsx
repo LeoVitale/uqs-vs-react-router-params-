@@ -1,5 +1,5 @@
-import { RenderFlash } from "./RenderFlash"
-import { Input } from "./ui/input"
+import { RenderFlash } from "../../RenderFlash"
+import { Input } from "../../ui/input"
 import { useSearchParams } from 'react-router'
 
 const InputUrlParams = ({state}: {state: string}) => {

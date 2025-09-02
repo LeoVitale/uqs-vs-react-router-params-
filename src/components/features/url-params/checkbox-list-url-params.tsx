@@ -1,5 +1,5 @@
 import { useSearchParams } from 'react-router'
-import { RenderFlash } from "./RenderFlash"
+import { RenderFlash } from "../../RenderFlash"
 
 interface CheckboxOption {
   id: string
