@@ -5,7 +5,7 @@ import TicketLabel from './labels/ticket-label'
 import EmailLabel from './labels/email-label'
 
 const IndependentLabelsShowcase = () => {
-  // ✅ Este componente controla os valores, mas os labels observam independentemente
+  // ✅ This component controls the values, but the labels observe independently
   const [, setParams] = useQueryStates({
     inbox: parseAsInteger,
     folder: parseAsInteger,
@@ -14,7 +14,7 @@ const IndependentLabelsShowcase = () => {
   })
 
 
-  // Funções para testar a independência
+  // Functions to test independence
   const setRandomInbox = () => setParams({ inbox: Math.floor(Math.random() * 100) + 1 })
   const setRandomFolder = () => setParams({ folder: Math.floor(Math.random() * 50) + 1 })
   const setRandomTicket = () => setParams({ ticket: Math.floor(Math.random() * 1000) + 1 })
@@ -33,13 +33,13 @@ const IndependentLabelsShowcase = () => {
       <div className="text-center">
         <h2 className="text-xl font-bold mb-2">🎭 Independent Labels Showcase</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          Cada label observa apenas seu próprio parâmetro - totalmente independentes!
+          Each label observes only its own parameter - completely independent!
         </p>
       </div>
 
-      {/* Labels Independentes */}
+      {/* Independent Labels */}
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold">📊 Labels Independentes:</h3>
+        <h3 className="text-lg font-semibold">📊 Independent Labels:</h3>
         <div className="flex flex-wrap gap-3">
           <InboxLabel />
           <FolderLabel />
@@ -48,9 +48,9 @@ const IndependentLabelsShowcase = () => {
         </div>
       </div>
 
-      {/* Controles para testar */}
+      {/* Test Controls */}
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold">🎮 Controles de Teste:</h3>
+        <h3 className="text-lg font-semibold">🎮 Test Controls:</h3>
         
         <div className="space-y-3">
           <div className="flex flex-wrap gap-2">
@@ -100,30 +100,30 @@ const IndependentLabelsShowcase = () => {
       {/* Info técnica */}
       <div className="border-t pt-4">
         <div className="text-xs text-gray-600 dark:text-gray-400 space-y-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="font-semibold mb-1">🔥 Como funciona:</p>
+              <p className="font-semibold mb-1">🔥 How it works:</p>
               <ul className="space-y-1">
-                <li>• Cada label = 1 componente independente</li>
-                <li>• Cada um usa seu próprio <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">useQueryState</code></li>
-                <li>• Zero coupling entre os labels</li>
-                <li>• Re-render individual por label</li>
+                <li>• Each label = 1 independent component</li>
+                <li>• Each uses its own <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">useQueryState</code></li>
+                <li>• Zero coupling between labels</li>
+                <li>• Individual re-render per label</li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold mb-1">✅ Vantagens:</p>
+              <p className="font-semibold mb-1">✅ Advantages:</p>
               <ul className="space-y-1">
-                <li>• Performance otimizada</li>
-                <li>• Componentes reutilizáveis</li>
-                <li>• Fácil manutenção</li>
-                <li>• Testabilidade individual</li>
+                <li>• Optimized performance</li>
+                <li>• Reusable components</li>
+                <li>• Easy maintenance</li>
+                <li>• Individual testability</li>
               </ul>
             </div>
           </div>
           
           <div className="mt-3 p-3 bg-yellow-50 dark:bg-yellow-950 rounded border border-yellow-200 dark:border-yellow-800">
             <p className="text-yellow-800 dark:text-yellow-200 text-sm">
-              💡 <strong>Teste:</strong> Clique nos botões e observe como apenas o label correspondente pisca/atualiza!
+              💡 <strong>Test:</strong> Click the buttons and observe how only the corresponding label flashes/updates!
             </p>
           </div>
         </div>

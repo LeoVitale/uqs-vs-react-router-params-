@@ -8,19 +8,19 @@ export interface HelpdeskLocationParams {
 }
 
 /**
- * Hook customizado para observar parâmetros do Helpdesk em modo read-only
+ * Custom hook to observe Helpdesk parameters in read-only mode
  * 
  * @example
  * ```tsx
  * const MyComponent = () => {
  *   const params = useHelpdeskParamsReadOnly()
  *   // params.inbox, params.folder, params.ticket, params.email
- *   // Não há funções setter - apenas valores observáveis
+ *   // No setter functions - only observable values
  * }
  * ```
  */
 export const useHelpdeskParamsReadOnly = (): HelpdeskLocationParams => {
-  // Só retorna os valores, não o setter
+  // Only returns the values, not the setter
   const [params] = useQueryStates({
     inbox: parseAsInteger,
     folder: parseAsInteger,
@@ -37,7 +37,7 @@ export const useHelpdeskParamsReadOnly = (): HelpdeskLocationParams => {
 }
 
 /**
- * Hook customizado para observar apenas inbox e folder em modo read-only
+ * Custom hook to observe only inbox and folder in read-only mode
  * 
  * @example
  * ```tsx
@@ -58,7 +58,7 @@ export const useInboxFolderReadOnly = () => {
 }
 
 /**
- * Hook alternativo usando múltiplos useQueryState (mais eficiente para poucos parâmetros)
+ * Alternative hook using multiple useQueryState (more efficient for few parameters)
  */
 export const useInboxFolderReadOnlySimple = () => {
   const [inbox] = useQueryState('inbox', parseAsInteger)

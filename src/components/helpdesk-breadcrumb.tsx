@@ -3,7 +3,7 @@ import { useInboxFolderReadOnlySimple } from './features/nuqs/useHelpdeskParamsR
 import { RenderFlash } from './RenderFlash'
 
 const HelpdeskBreadcrumb = () => {
-  // ✅ Hook customizado - observa apenas inbox e folder (read-only)
+  // ✅ Custom hook - observes only inbox and folder (read-only)
   const { inbox, folder } = useInboxFolderReadOnlySimple()
 
   const renderBreadcrumb = () => {
@@ -56,10 +56,10 @@ const HelpdeskBreadcrumb = () => {
           </div>
           
           <div className="text-xs text-gray-600 dark:text-gray-400 border-t pt-3 space-y-1">
-            <p>✅ Usa hook customizado <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">useInboxFolderReadOnlySimple()</code></p>
-            <p>🔒 Read-only: Não pode modificar os parâmetros</p>
-            <p>⚡ Re-render apenas quando inbox ou folder mudam</p>
-            <p>🎯 Perfeito para breadcrumbs, headers, sidebars...</p>
+            <p>✅ Uses custom hook <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">useInboxFolderReadOnlySimple()</code></p>
+            <p>🔒 Read-only: Cannot modify the parameters</p>
+            <p>⚡ Re-renders only when inbox or folder changes</p>
+            <p>🎯 Perfect for breadcrumbs, headers, sidebars...</p>
           </div>
         </div>
       </div>

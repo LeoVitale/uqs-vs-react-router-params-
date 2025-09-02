@@ -2,7 +2,7 @@ import { useQueryState, parseAsInteger } from 'nuqs'
 import { RenderFlash } from '../../RenderFlash'
 
 const FolderObserver = () => {
-  // ✅ Observa APENAS o parâmetro "folder"  
+  // ✅ Observes ONLY the "folder" parameter  
   const [folder, setFolder] = useQueryState('folder', parseAsInteger)
 
   return (
@@ -48,9 +48,9 @@ const FolderObserver = () => {
         </div>
 
         <div className="text-xs text-gray-600">
-          <p>✅ Este componente observa apenas o parâmetro "folder"</p>
-          <p>✅ Mudanças em inbox, ticket, email não afetam este componente</p>
-          <p>✅ Este componente pode modificar apenas folder</p>
+          <p>✅ This component observes only the "folder" parameter</p>
+          <p>✅ Changes to inbox, ticket, email don't affect this component</p>
+          <p>✅ This component can modify only folder</p>
         </div>
       </div>
     </RenderFlash>

@@ -9,7 +9,7 @@ const ScatteredLabelsDemo = () => {
       <div className="text-center">
         <h2 className="text-xl font-bold mb-2">🌐 Scattered Labels Demo</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          Labels espalhados em diferentes "locais" da aplicação - todos sincronizados!
+          Labels scattered in different "locations" of the application - all synchronized!
         </p>
       </div>
 
@@ -93,14 +93,14 @@ const ScatteredLabelsDemo = () => {
       {/* Explanation */}
       <div className="bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 p-4 rounded-lg">
         <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">
-          🧠 Como funciona a magia:
+          🧠 How the magic works:
         </h3>
         <div className="text-sm text-blue-800 dark:text-blue-200 space-y-1">
-          <p>✅ <strong>Cada label</strong> é um componente independente com seu próprio <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">useQueryState</code></p>
-          <p>✅ <strong>Zero coupling</strong> - um label não sabe da existência dos outros</p>
-          <p>✅ <strong>Sincronização automática</strong> - todos observam a mesma URL</p>
-          <p>✅ <strong>Performance</strong> - cada label re-render apenas quando SEU parâmetro muda</p>
-          <p>✅ <strong>Reutilizável</strong> - o mesmo componente pode ser usado em qualquer lugar</p>
+          <p>✅ <strong>Each label</strong> is an independent component with its own <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">useQueryState</code></p>
+          <p>✅ <strong>Zero coupling</strong> - one label doesn't know about the existence of others</p>
+          <p>✅ <strong>Automatic synchronization</strong> - all observe the same URL</p>
+          <p>✅ <strong>Performance</strong> - each label re-renders only when ITS parameter changes</p>
+          <p>✅ <strong>Reusable</strong> - the same component can be used anywhere</p>
         </div>
       </div>
     </div>

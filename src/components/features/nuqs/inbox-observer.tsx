@@ -2,7 +2,7 @@ import { useQueryState, parseAsInteger } from 'nuqs'
 import { RenderFlash } from '../../RenderFlash'
 
 const InboxObserver = () => {
-  // ✅ Observa APENAS o parâmetro "inbox"
+  // ✅ Observes ONLY the "inbox" parameter
   const [inbox, setInbox] = useQueryState('inbox', parseAsInteger)
 
   return (
@@ -48,9 +48,9 @@ const InboxObserver = () => {
         </div>
 
         <div className="text-xs text-gray-600">
-          <p>✅ Este componente observa apenas o parâmetro "inbox"</p>
-          <p>✅ Mudanças em outros parâmetros não afetam este componente</p>
-          <p>✅ Este componente pode modificar apenas inbox</p>
+          <p>✅ This component observes only the "inbox" parameter</p>
+          <p>✅ Changes to other parameters don't affect this component</p>
+          <p>✅ This component can modify only inbox</p>
         </div>
       </div>
     </RenderFlash>

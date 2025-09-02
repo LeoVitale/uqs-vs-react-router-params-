@@ -2,7 +2,7 @@ import { useQueryState, parseAsInteger } from 'nuqs'
 import { RenderFlash } from '../../RenderFlash'
 
 const InboxFolderDisplay = () => {
-  // ✅ Observa APENAS os valores, sem possibilidade de modificar
+  // ✅ Observes ONLY the values, without possibility of modification
   const [inbox] = useQueryState('inbox', parseAsInteger)
   const [folder] = useQueryState('folder', parseAsInteger)
 
@@ -39,9 +39,9 @@ const InboxFolderDisplay = () => {
 
         <div className="border-t pt-3">
           <div className="text-xs text-gray-600 dark:text-gray-400 space-y-1">
-            <p>✅ Observa apenas <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">inbox</code> e <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">folder</code></p>
-            <p>🔒 Read-only: Não pode modificar os valores</p>
-            <p>⚡ Re-render apenas quando inbox ou folder mudam</p>
+            <p>✅ Observes only <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">inbox</code> and <code className="bg-gray-200 dark:bg-gray-700 px-1 rounded">folder</code></p>
+            <p>🔒 Read-only: Cannot modify the values</p>
+            <p>⚡ Re-renders only when inbox or folder changes</p>
           </div>
         </div>
 

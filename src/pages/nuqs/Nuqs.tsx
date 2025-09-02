@@ -12,30 +12,30 @@ const Nuqs = () => {
   return (
     <Layout>
       <div className="space-y-6">
-        {/* Breadcrumb sempre no topo */}
+        {/* Breadcrumb always at the top */}
         <HelpdeskBreadcrumb />
         
-        {/* Showcase de Labels Independentes */}
+        {/* Independent Labels Showcase */}
         <IndependentLabelsShowcase />
         
-        {/* Demo de Labels Espalhados */}
+        {/* Scattered Labels Demo */}
         <ScatteredLabelsDemo />
         
         <div>
-          <h2 className="text-xl font-bold mb-4">Parâmetros Específicos (Observadores)</h2>
+          <h2 className="text-xl font-bold mb-4">Specific Parameters (Observers)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <InboxObserver />
             <FolderObserver />
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-3">Read-Only Observer (Somente Leitura)</h3>
+            <h3 className="text-lg font-semibold mb-3">Read-Only Observer</h3>
             <InboxFolderDisplay />
           </div>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-4">Outros Exemplos</h2>
+          <h2 className="text-xl font-bold mb-4">Other Examples</h2>
           <div className="space-y-4">
             <CheckboxListNuqs paramName="tipo" />
             
