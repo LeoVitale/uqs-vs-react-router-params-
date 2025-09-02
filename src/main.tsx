@@ -4,8 +4,8 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from "react-router";
 import { NuqsAdapter } from 'nuqs/adapters/react-router/v7';
 import Home from './components/Home'
-import UrlParams from './components/UrlParams'
-import Nuqs from './components/Nuqs'
+import UrlParams from './pages/UrlParams'
+import Nuqs from './pages/Nuqs'
 import { ThemeProvider } from './components/theme-provider';
 
 createRoot(document.getElementById('root')!).render(
