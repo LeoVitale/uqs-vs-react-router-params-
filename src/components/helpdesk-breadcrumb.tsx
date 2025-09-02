@@ -1,4 +1,5 @@
-import { useInboxFolderReadOnlySimple } from '@/hooks/useHelpdeskParamsReadOnly'
+
+import { useInboxFolderReadOnlySimple } from './features/nuqs/useHelpdeskParamsReadOnly'
 import { RenderFlash } from './RenderFlash'
 
 const HelpdeskBreadcrumb = () => {
